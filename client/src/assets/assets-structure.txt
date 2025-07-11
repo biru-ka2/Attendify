@@ -1,0 +1,25 @@
+// assets/assets.js
+
+import logo from './images/logo.png';
+import hero from './images/hero.png';
+import avatar from './images/avatar.svg';
+
+import editIcon from './icons/edit.svg';
+import deleteIcon from './icons/delete.svg';
+import menuIcon from './icons/menu.svg';
+
+import calendar3d from './illustrations/calendar3d.png';
+
+export const assets = {
+  logo,
+  hero,
+  avatar,
+  icons: {
+    edit: editIcon,
+    delete: deleteIcon,
+    menu: menuIcon,
+  },
+  illustrations: {
+    calendar: calendar3d,
+  },
+};

@@ -1,9 +1,12 @@
 import React from 'react'
+import { assets } from './assets/assets'
+import './App.css'
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
   return (
     <div className='app'>
-      This is smart attendance Tracker Web App.
+      <Navbar />
     </div>
   )
 }
