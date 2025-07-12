@@ -3,5 +3,52 @@
 .app {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;       /* ✅ full height */
+  overflow: hidden;    
 }
+.sidebar-plus-content {
+  flex: 1;
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.container-plus-footer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  @apply w-full  overflow-y-auto;
+ 
+}
+
+
+/* Scroll bar css */
+.container-plus-footer::-webkit-scrollbar {
+  width: 8px;
+}
+
+.container-plus-footer::-webkit-scrollbar-track {
+  background: rgba(59, 130, 246, 0.05); /* Light blue transparent background */
+}
+
+.container-plus-footer::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #60a5fa, #3b82f6, #2563eb); /* blue-400 to 600 */
+  border-radius: 10px;
+  border: 8px solid transparent;
+  background-clip: content-box;
+  transition: all 0.3s ease;
+}
+
+.container-plus-footer::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #93c5fd, #60a5fa, #3b82f6); /* lighter on hover */
+}
+
+.container-plus-footer {
+  scrollbar-width:thin;
+  scrollbar-color: #3b82f6 transparent;
+}
+
+
+

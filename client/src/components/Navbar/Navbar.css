@@ -7,9 +7,8 @@
   align-items: center;
   justify-content: space-between;
   background: white;
-  border-bottom: 1px solid #eee;
   position: relative;
-  @apply px-28;
+  @apply md:px-28 max-md:p-3.5 border border-gray-300;
 }
 
 .navbar-logo {

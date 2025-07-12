@@ -1,10 +1,11 @@
 import React from 'react'
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <div>
-      
-    </div>
+    <footer className="footer">
+      © 2025 Attendify. All rights reserved.
+    </footer>
   )
 }
 
