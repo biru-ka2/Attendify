@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+
+.horizontal-card{
+    @apply flex max-md:flex-wrap;
+    @apply  px-5;
+}
+.horizontal-card-reverse{
+    @apply flex flex-row-reverse max-md:flex-wrap;
+    @apply  lg:p-12;
+}
+.horizontal-card-content{
+    @apply flex flex-col justify-center text-center;
+}
+.title{
+    @apply text-2xl text-blue-950;
+    
+}
+.desc{
+    color: #605e7ada;
+    @apply text-justify ;
+}
+

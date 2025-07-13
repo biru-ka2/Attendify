@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  text-align: center;
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  box-sizing: border-box;
+  @apply lg:pl-20;
+}
+
+.typewriter-text {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #080160; /* default text color */
+}
+
+.highlight {
+  color: #e63946; /* red or your primary */
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2em;
+  background-color: #333;
+  margin-left: 4px;
+  animation: blink 0.8s infinite;
+}
+
+.btn-register{
+    @apply cursor-pointer text-violet-700 border border-violet-500 py-1.5 px-4.5 rounded-full hover:bg-violet-500 hover:text-white hover:border-violet-500;
+}
+.btn-learn-more{
+    @apply cursor-pointer text-white border border-violet-500 bg-violet-500 py-1.5 px-4.5 rounded-full hover:bg-white hover:text-violet-700 hover:border-violet-500;
+}

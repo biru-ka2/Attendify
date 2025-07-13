@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import './Navbar.css';
-import { assets } from '../../assets/assets';
-import { Check, CheckCheckIcon, Download, Home, Settings, User, View } from 'lucide-react';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css";
+import { assets } from "../../assets/assets";
+import {
+  Check,
+  CheckCheckIcon,
+  Download,
+  Home,
+  Settings,
+  User,
+  View,
+} from "lucide-react";
 
 const Navbar = () => {
   const [isAvatarOpen, setIsAvatarOpen] = useState(false);
@@ -23,31 +31,47 @@ const Navbar = () => {
 
       {/* Center - Logo */}
       <div className="logo">
-        <NavLink to='/' className="navbar-logo hidden md:block">
-          <img className='logo-image' src={assets.logo} alt="" />
+        <NavLink to="/" className="navbar-logo hidden md:block">
+          <img className="logo-image" src={assets.logo} alt="" />
         </NavLink>
         {/* <NavLink to='/' className="navbar-logo block md:hidden"><img className='logo-image' src={assets.logo} alt="" /></NavLink> */}
       </div>
 
-
       {/* Desktop Nav (hidden on mobile) */}
       <div className="navbar-links">
-        <NavLink to="/" className={({ isActive }) =>
-  `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
-}
-><Home />Home</NavLink>
-        <NavLink to="/mark" className={({ isActive }) =>
-  `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
-}
-><CheckCheckIcon /> Mark</NavLink>
-        <NavLink to="/view" className={({ isActive }) =>
-  `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
-}
-><View /> View</NavLink>
-        <NavLink to="/export" className={({ isActive }) =>
-  `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
-}
-><Download /> Export</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
+          }
+        >
+          <Home />
+          Home
+        </NavLink>
+        <NavLink
+          to="/mark"
+          className={({ isActive }) =>
+            `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
+          }
+        >
+          <CheckCheckIcon /> Mark
+        </NavLink>
+        <NavLink
+          to="/view"
+          className={({ isActive }) =>
+            `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
+          }
+        >
+          <View /> View
+        </NavLink>
+        <NavLink
+          to="/export"
+          className={({ isActive }) =>
+            `flex gap-2 ${isActive ? "nav-link active-link" : "nav-link"}`
+          }
+        >
+          <Download /> Export
+        </NavLink>
       </div>
 
       {/* Right - Avatar */}
@@ -64,28 +88,68 @@ const Navbar = () => {
         {isAvatarOpen && (
           <div className="avatar-dropdown">
             <div className="dropdown-arrow"></div>
-            <NavLink to="/login" onClick={() => setIsAvatarOpen(false)}>Login</NavLink>
-            <NavLink to="/register" onClick={() => setIsAvatarOpen(false)}>Register</NavLink>
-            <NavLink to="/dashboard" onClick={() => setIsAvatarOpen(false)}>Dashboard</NavLink>
+            <NavLink to="/login" onClick={() => setIsAvatarOpen(false)}>
+              Login
+            </NavLink>
+            <NavLink to="/register" onClick={() => setIsAvatarOpen(false)}>
+              Register
+            </NavLink>
+            <NavLink to="/dashboard" onClick={() => setIsAvatarOpen(false)}>
+              Dashboard
+            </NavLink>
             <button className="logout-btn">Logout</button>
           </div>
         )}
       </div>
 
-
-
       {/* Mobile Menu (on hamburger toggle) */}
       {isMenuOpen && (
         <div className="mobile-menu">
-          <NavLink className='flex gap-2' to="/" onClick={() => setIsMenuOpen(false)}><Home />Home</NavLink>
-          <NavLink className='flex gap-2' to="/mark" onClick={() => setIsMenuOpen(false)}><CheckCheckIcon /> Mark</NavLink>
-          <NavLink className='flex gap-2' to="/view" onClick={() => setIsMenuOpen(false)}><View /> View</NavLink>
-          <NavLink className='flex gap-2' to="/export" onClick={() => setIsMenuOpen(false)}><Download /> Export</NavLink>
-          <hr className='text-gray-300' />
-          <NavLink className='flex gap-2' to="/students" onClick={() => setIsMenuOpen(false)}><User />Students</NavLink>
-          <NavLink className='flex gap-2' to="/settings" onClick={() => setIsMenuOpen(false)}><Settings /> Settings</NavLink>
-
-
+          <NavLink
+            className="flex gap-2"
+            to="/"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <Home />
+            Home
+          </NavLink>
+          <NavLink
+            className="flex gap-2"
+            to="/mark"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <CheckCheckIcon /> Mark
+          </NavLink>
+          <NavLink
+            className="flex gap-2"
+            to="/view"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <View /> View
+          </NavLink>
+          <NavLink
+            className="flex gap-2"
+            to="/export"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <Download /> Export
+          </NavLink>
+          <hr className="text-gray-300" />
+          <NavLink
+            className="flex gap-2"
+            to="/students"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <User />
+            Students
+          </NavLink>
+          <NavLink
+            className="flex gap-2"
+            to="/settings"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <Settings /> Settings
+          </NavLink>
         </div>
       )}
     </nav>

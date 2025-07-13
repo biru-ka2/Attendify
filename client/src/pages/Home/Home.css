@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
-.home{
-    color: red;
+.home {
+  width: 100%;
+  color: red;
+  @apply w-full flex flex-col justify-center text-center;
+}
+
+.hero-section {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  @apply max-lg:flex-col max-md:justify-between justify-around px-10 lg:mb-12;
+  /* for mobile responsive */
+}
+
+.hero-section::after {
+  display: none;
+}
+
+
+.feature-section{
+  @apply lg:m-12;
 }

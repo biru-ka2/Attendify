@@ -1,0 +1,8 @@
+| 🔢 # | ✅ Title              | 🎨 Lucide Icon Name | 📃 Description                                 |
+| ---- | -------------------- | ------------------- | ---------------------------------------------- |
+| 1️⃣  | One-Click Attendance | `CheckCircle`       | Mark attendance instantly with just one click. |
+| 2️⃣  | Live Dashboard       | `BarChart3`         | See your attendance stats in real-time.        |
+| 3️⃣  | Export to Excel/PDF  | `FileDown`          | Download attendance reports in Excel or PDF.   |
+| 4️⃣  | Smart Reminders      | `AlarmClock`        | Get notified when attendance is missed.        |
+| 5️⃣  | Secure & Private     | `ShieldCheck`       | Your data is encrypted and securely stored.    |
+| 6️⃣  | Mobile Friendly      | `Smartphone`        | Access Attendify smoothly on all screen sizes. |

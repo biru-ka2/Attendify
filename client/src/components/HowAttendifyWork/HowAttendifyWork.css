@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+.how-attendify-work{
+    @apply  p-5;
+}
+.working-heading{
+    @apply text-blue-950 text-3xl font-semibold p-0;
+}
+
+.working-card-container{
+    @apply flex flex-col justify-between gap-3.5;
+    @apply p-5;
+}

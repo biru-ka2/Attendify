@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.hero-right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+
