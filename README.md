@@ -48,7 +48,7 @@
 * **Routing**: React Router
 * **Icons**: Lucide React
 * **Version Control**: Git & GitHub
-* **Deployment**: Vercel
+
 
 ---
 
@@ -70,7 +70,6 @@ $ npm run dev
 
 ---
 
-## 🌐 Live Preview
 
 ---
 
