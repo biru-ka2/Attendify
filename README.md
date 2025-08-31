@@ -56,7 +56,7 @@
 
 ```bash
 # Clone the repository
-$ git clone https://github.com/abhi1913ek-79ri/Attendify.git
+$ git clone https://github.com/biru-ka2/Attendify.git
 
 # Navigate to the client folder
 $ cd Attendify/client
@@ -72,29 +72,14 @@ $ npm run dev
 
 ## 🌐 Live Preview
 
-🔗 [https://attendify-seven.vercel.app](https://attendify-seven.vercel.app)
-
 ---
 
 ## 🙋‍♂️ About the Creator
 
-Made with ❤️ by **Abhishek Kumar Giri (Golu)**
+Made with ❤️ by **Biruk Worku**
 
-* 📧 Email: [ag1161534@gmail.com](mailto:ag1161534@gmail.com)
-* 💼 [LinkedIn](https://www.linkedin.com/in/abhishek-kumar-giri-abhi1913ek-79ri/)
-* 🧑‍💻 [GitHub](https://github.com/abhi1913ek-79ri)
-
----
-
-## 📃 License
-
-This project is licensed under the [MIT License](LICENSE).
+* 📧 Email: [bworku1221@gmail.com]
+* 💼 [LinkedIn](https://linkedin.com/in/biru-ka2/)
+* 🧑‍💻 [GitHub](https://github.com/biru-ka2)
 
 ---
-
-## 🙏 Acknowledgments
-
-* Icons by [Lucide](https://lucide.dev/)
-* Inspiration from students struggling with outdated attendance systems 😄
-
-> Simplify attendance. Empower education.
